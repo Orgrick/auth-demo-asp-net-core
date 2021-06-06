@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AuthDemo.Domain.Interfaces;
-using AuthDemo.Domain.Models;
+using AuthDemo.Api.ResourseModels;
 
 namespace AuthDemo.Api.Controllers
 {

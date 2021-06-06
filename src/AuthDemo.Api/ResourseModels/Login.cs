@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AuthDemo.Domain.Models
+namespace AuthDemo.Api.ResourseModels
 {
     public class Login
     {

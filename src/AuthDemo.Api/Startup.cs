@@ -21,13 +21,21 @@ namespace AuthDemo.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-
-            var authOptionsConfiguration = Configuration.GetSection("Auth");
-            services.Configure<AuthOptions>(authOptionsConfiguration);
+            services.Configure<AuthOptions>(Configuration.GetSection("Auth"));
 
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IJwtService, JwtService>();
             services.AddScoped<IAuthService, AuthService>();
+
+            services.AddCors(opt =>
+            {
+                opt.AddDefaultPolicy(builder => 
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
 
             services.AddControllers();
         }
@@ -41,6 +49,8 @@ namespace AuthDemo.Api
             }
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {

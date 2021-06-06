@@ -13,9 +13,10 @@ namespace AuthDemo.Application.Services
     public class JwtService : IJwtService
     {
         private readonly IOptions<AuthOptions> _authOptions;
-        public JwtService(IOptions<AuthOptions> authoptions)
+
+        public JwtService(IOptions<AuthOptions> authOptions)
         {
-            _authOptions = authoptions;
+            _authOptions = authOptions;
         }
 
         public string GenerateJWT(Account user)

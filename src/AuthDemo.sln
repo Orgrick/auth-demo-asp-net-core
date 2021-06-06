@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDemo.Api", "AuthDemo.Api\AuthDemo.Api.csproj", "{E401F754-36B9-4E4D-91EA-46A6EA68BCD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Api", "AuthDemo.Api\AuthDemo.Api.csproj", "{E401F754-36B9-4E4D-91EA-46A6EA68BCD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDemo.Domain", "AuthDemo.Domain\AuthDemo.Domain.csproj", "{685434C4-3690-42CB-96E0-A7F4439BEACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Domain", "AuthDemo.Domain\AuthDemo.Domain.csproj", "{685434C4-3690-42CB-96E0-A7F4439BEACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDemo.Application", "AuthDemo.Application\AuthDemo.Application.csproj", "{601F9216-D415-4483-8497-8DC63A63A44B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Application", "AuthDemo.Application\AuthDemo.Application.csproj", "{601F9216-D415-4483-8497-8DC63A63A44B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDemo.DAL", "AuthDemo.DAL\AuthDemo.DAL.csproj", "{BBA2B79D-B13C-4001-8B62-F9A91A0281A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.DAL", "AuthDemo.DAL\AuthDemo.DAL.csproj", "{BBA2B79D-B13C-4001-8B62-F9A91A0281A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDemo.Resource.Api", "AuthDemo.Resource.Api\AuthDemo.Resource.Api.csproj", "{8632F305-79C0-496C-971E-28C928BDE082}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BBA2B79D-B13C-4001-8B62-F9A91A0281A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA2B79D-B13C-4001-8B62-F9A91A0281A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBA2B79D-B13C-4001-8B62-F9A91A0281A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8632F305-79C0-496C-971E-28C928BDE082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8632F305-79C0-496C-971E-28C928BDE082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8632F305-79C0-496C-971E-28C928BDE082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8632F305-79C0-496C-971E-28C928BDE082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
